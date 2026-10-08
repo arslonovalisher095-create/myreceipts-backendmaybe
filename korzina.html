@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyReceipts - All your purchases in one place</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="Designer__3_-removebg-preview.png" sizes="64x64" type="image/png">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <img src="mayas.png" alt="">
+            </div>
+
+            <div>
+                <h2>MyReceipts</h2>
+                <span>всегда под рукой</span>
+            </div>
+
+        </div>
+
+           <button
+            class="add-btn"
+            id="addReceiptBtn"
+        >
+            ＋ Добавить чек
+        </button>
+
+        <nav>
+
+              <a href="index.html" >▣  Все чеки</a>
+            <a href="garant.html">▣  Гарантии</a>
+            <a href="analytics.html">▣ Аналитика</a>
+            <a href="shop.html" >▣  Магазины</a>
+            <a href="Category.html">▣  Категории</a>
+            <a href="korzina.html" class="active">▣ Корзина</a>
+
+        </nav>
+
+
+        <div class="promo">
+
+            <div class="promo-icon">
+                🗑️
+            </div>
+
+            <h3>
+                Всё под контролем
+            </h3>
+
+            <p>
+                Удалённые чеки хранятся в корзине,
+                чтобы вы могли восстановить их.
+            </p>
+
+            <a>
+                Узнать больше →
+            </a>
+
+        </div>
+
+
+        <div class="bottom-nav">
+
+            <a>Настройки</a>
+
+            <a>Помощь</a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="search">
+
+                <img src="why.png" alt="">
+
+                <input
+                    type="text"
+                    placeholder="Поиск удалённых чеков..."
+                >
+
+                <span>
+                    Ctrl / ⌘ + K
+                </span>
+
+            </div>
+
+
+            <div class="profile">
+
+                <img src="images (8).png" alt="">
+
+                <div class="avatar">
+                    А
+                </div>
+
+                <b>
+                    Алишер
+                </b>
+
+                ˅
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+            <section class="trash-page">
+
+
+                <!-- TITLE -->
+
+                <div class="trash-top">
+
+                    <div>
+
+                        <h1>
+                            Корзина
+                        </h1>
+
+                        <p>
+                            Удалённые чеки и покупки
+                        </p>
+
+                    </div>
+
+
+                    <button class="clear-trash">
+                        Очистить корзину
+                    </button>
+
+                </div>
+
+
+                <!-- WARNING -->
+
+                <div class="trash-warning">
+
+                    <div class="warning-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Чеки будут удалены навсегда
+                        </strong>
+
+                        <p>
+                            После очистки корзины восстановить
+                            удалённые чеки будет невозможно.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="trash-stats">
+
+
+                    <div class="trash-stat">
+
+                        <div class="trash-stat-icon purple-trash">
+                            🧾
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Удалённых чеков
+                            </span>
+
+                            <strong>
+                                7
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="trash-stat">
+
+                        <div class="trash-stat-icon orange-trash">
+                            💳
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Общая сумма
+                            </span>
+
+                            <strong>
+                                1 284 500
+                                <small>сум</small>
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="trash-stat">
+
+                        <div class="trash-stat-icon blue-trash">
+                            📅
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Последнее удаление
+                            </span>
+
+                            <strong>
+                                Сегодня
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="trash-stat">
+
+                        <div class="trash-stat-icon green-trash">
+                            ♻
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Можно восстановить
+                            </span>
+
+                            <strong>
+                                7
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTROLS -->
+
+                <div class="trash-controls">
+
+                    <div class="trash-search">
+
+                        🔍
+
+                        <input
+                            type="text"
+                            placeholder="Найти удалённый чек..."
+                        >
+
+                    </div>
+
+
+                    <button class="trash-filter">
+                        Все даты⌄
+                    </button>
+
+
+                    <button class="trash-filter">
+                        Сортировка⌄
+                    </button>
+
+                </div>
+
+
+                <!-- DELETED RECEIPTS -->
+
+                <div class="trash-list">
+
+
+                    <!-- RECEIPT -->
+
+                    <div class="trash-card">
+
+                        <div class="trash-receipt-icon">
+                            🛒
+                        </div>
+
+
+                        <div class="trash-receipt-info">
+
+                            <h2>
+                                Покупки в Makro
+                            </h2>
+
+                            <span>
+                                Makro • Продукты
+                            </span>
+
+                            <small>
+                                Удалено сегодня, 12:34
+                            </small>
+
+                        </div>
+
+
+                        <div class="trash-price">
+
+                            <span>
+                                Сумма
+                            </span>
+
+                            <b>
+                                245 500 сум
+                            </b>
+
+                        </div>
+
+
+                        <div class="trash-actions">
+
+                            <button class="restore">
+                                ↶ Восстановить
+                            </button>
+
+                            <button class="delete">
+                                🗑
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECEIPT -->
+
+                    <div class="trash-card">
+
+                        <div class="trash-receipt-icon green-receipt">
+                            🛍️
+                        </div>
+
+
+                        <div class="trash-receipt-info">
+
+                            <h2>
+                                Продукты
+                            </h2>
+
+                            <span>
+                                Корзинка • Продукты
+                            </span>
+
+                            <small>
+                                Удалено вчера, 18:21
+                            </small>
+
+                        </div>
+
+
+                        <div class="trash-price">
+
+                            <span>
+                                Сумма
+                            </span>
+
+                            <b>
+                                187 000 сум
+                            </b>
+
+                        </div>
+
+
+                        <div class="trash-actions">
+
+                            <button class="restore">
+                                ↶ Восстановить
+                            </button>
+
+                            <button class="delete">
+                                🗑
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECEIPT -->
+
+                    <div class="trash-card">
+
+                        <div class="trash-receipt-icon orange-receipt">
+                            💻
+                        </div>
+
+
+                        <div class="trash-receipt-info">
+
+                            <h2>
+                                MacBook Air M2
+                            </h2>
+
+                            <span>
+                                Techno Market • Электроника
+                            </span>
+
+                            <small>
+                                Удалено 25 июня, 15:42
+                            </small>
+
+                        </div>
+
+
+                        <div class="trash-price">
+
+                            <span>
+                                Сумма
+                            </span>
+
+                            <b>
+                                9 990 000 сум
+                            </b>
+
+                        </div>
+
+
+                        <div class="trash-actions">
+
+                            <button class="restore">
+                                ↶ Восстановить
+                            </button>
+
+                            <button class="delete">
+                                🗑
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECEIPT -->
+
+                    <div class="trash-card">
+
+                        <div class="trash-receipt-icon blue-receipt">
+                            🏠
+                        </div>
+
+
+                        <div class="trash-receipt-info">
+
+                            <h2>
+                                Товары для дома
+                            </h2>
+
+                            <span>
+                                Stroy Center • Дом и быт
+                            </span>
+
+                            <small>
+                                Удалено 20 июня, 11:08
+                            </small>
+
+                        </div>
+
+
+                        <div class="trash-price">
+
+                            <span>
+                                Сумма
+                            </span>
+
+                            <b>
+                                365 000 сум
+                            </b>
+
+                        </div>
+
+
+                        <div class="trash-actions">
+
+                            <button class="restore">
+                                ↶ Восстановить
+                            </button>
+
+                            <button class="delete">
+                                🗑
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECEIPT -->
+
+                    <div class="trash-card">
+
+                        <div class="trash-receipt-icon pink-receipt">
+                            👕
+                        </div>
+
+
+                        <div class="trash-receipt-info">
+
+                            <h2>
+                                Новая одежда
+                            </h2>
+
+                            <span>
+                                Uzum Market • Одежда
+                            </span>
+
+                            <small>
+                                Удалено 18 июня, 14:25
+                            </small>
+
+                        </div>
+
+
+                        <div class="trash-price">
+
+                            <span>
+                                Сумма
+                            </span>
+
+                            <b>
+                                298 000 сум
+                            </b>
+
+                        </div>
+
+
+                        <div class="trash-actions">
+
+                            <button class="restore">
+                                ↶ Восстановить
+                            </button>
+
+                            <button class="delete">
+                                🗑
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMPTY / MORE -->
+
+                <button class="show-more-trash">
+                    Показать ещё ↓
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+class="camera-modal"
+    id="cameraModal"
+>
+
+    <div class="camera-box">
+
+        <button
+            class="camera-close"
+            id="closeCamera"
+        >
+            ×
+        </button>
+
+        <h2>
+            Добавить чек
+        </h2>
+
+        <p>
+            Наведите камеру на QR-код чека
+        </p>
+
+        <div
+            id="reader"
+            style="width: 100%;"
+        ></div>
+
+        <div
+            id="ocrResult"
+            style="margin-top: 15px;"
+        ></div>
+
+        <p
+            class="camera-status"
+            id="cameraStatus"
+        >
+            Нажмите «Сканировать чек»
+        </p>
+
+        <button
+            class="frbutt"
+            type="button"
+            id="scanReceipt"
+        >
+            Сканировать чек
+        </button>
+
+        <button
+            class="camera-cancel"
+            id="cancelCamera"
+        >
+            Выйти
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+
+</body>
+</html>

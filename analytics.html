@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyReceipts - All your purchases in one place</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Designer__3_-removebg-preview.png" sizes="64x64" type="image/png">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <img src="mayas.png" alt="">
+            </div>
+            <div>
+                <h2>MyReceipts</h2>
+                <span>всегда под рукой</span>
+            </div>
+        </div>
+
+             <button
+            class="add-btn"
+            id="addReceiptBtn"
+        >
+            ＋ Добавить чек
+        </button>
+
+        <nav>
+   <a href="index.html" >▣  Все чеки</a>
+            <a href="garant.html">▣  Гарантии</a>
+            <a href="analytics.html" class="active">▣ Аналитика</a>
+            <a href="shop.html">▣  Магазины</a>
+            <a href="Category.html">▣  Категории</a>
+            <a href="korzina.html">▣ Корзина</a>
+        </nav>
+
+        <div class="promo">
+            <div class="promo-icon">📊</div>
+            <h3>Узнайте больше о тратах</h3>
+            <p>
+                Аналитика помогает контролировать бюджет
+                и принимать решения
+            </p>
+            <a>Узнать больше →</a>
+        </div>
+
+        <div class="bottom-nav">
+            <a>Настройки</a>
+            
+            
+            <a>Помощь</a>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header>
+
+            <div class="search">
+                <img src="why.png" alt="">
+                <input
+                    type="text"
+                    placeholder="Поиск по чекам, товарам, магазинам..."
+                >
+                <span>Ctrl / ⌘ + K</span>
+            </div>
+
+            <div class="profile">
+                🔔
+                <div class="avatar">А</div>
+                <b>Алишер</b>
+                ˅
+            </div>
+
+        </header>
+
+
+        <div class="content">
+
+            <!-- CENTRAL -->
+            <section class="analytics">
+
+                <h1>Аналитика</h1>
+
+
+                <!-- FILTERS -->
+
+                <div class="filters">
+
+                    <button class="selected">
+                        Этот месяц
+                    </button>
+
+                    <button>
+                        Прошлый месяц
+                    </button>
+
+                    <button>
+                        Этот год
+                    </button>
+
+                    <button>
+                        Все время
+                    </button>
+
+                    <button class="filter">
+                        ☷ Фильтры
+                    </button>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <span>Потрачено</span>
+
+                        <strong>
+                            12 450 000 <small>сум</small>
+                        </strong>
+
+                        <p class="up">↑ 12.5%</p>
+
+                        <em>по сравнению с прошлым месяцем</em>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span>Товаров куплено</span>
+
+                        <strong>
+                            312 <small></small>
+                        </strong>
+
+                        <p class="down">↑ 15.7%</p>
+
+                        <em>по сравнению с прошлым месяцем</em>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span>Количество чеков</span>
+
+                        <strong>128</strong>
+
+                        <p class="up">↑ 8.2%</p>
+
+                        <em>по сравнению с прошлым месяцем</em>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span>Средний чек</span>
+
+                        <strong>97 265</strong>
+
+                        <p class="up">↓ 4.3%</p>
+
+                        <em>по сравнению с прошлым месяцем</em>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CHARTS -->
+
+                <div class="charts">
+
+
+                    <!-- EXPENSE CHART -->
+
+                    <div class="chart-card expenses">
+
+                        <div class="chart-title">
+                            <h2>Динамика расходов</h2>
+
+                            <button>
+                                По дням⌄
+                            </button>
+                        </div>
+
+                        <div class="line-chart">
+
+                            <div class="y-axis">
+                                <span>2M</span>
+                                <span>1.5M</span>
+                                <span>1M</span>
+                                <span>500K</span>
+                                <span>0</span>
+                            </div>
+
+                            <div class="graph">
+
+                                <div class="line"></div>
+
+                                <div class="point p1"></div>
+                                <div class="point p2"></div>
+                                <div class="point p3"></div>
+                                <div class="point p4"></div>
+                                <div class="point p5"></div>
+                                <div class="point p6"></div>
+                                <div class="point p7"></div>
+                                <div class="point p8"></div>
+                                <div class="point p9"></div>
+
+                            </div>
+
+                            <div class="x-axis">
+                                <span>1 июн</span>
+                                <span>5 июн</span>
+                                <span>10 июн</span>
+                                <span>15 июн</span>
+                                <span>20 июн</span>
+                                <span>25 июн</span>
+                                <span>30 июн</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CATEGORIES -->
+
+                    <div class="chart-card categories">
+
+                        <h2>Расходы по категориям</h2>
+
+                        <div class="donut-area">
+
+                            <div class="donut">
+                                <div></div>
+                            </div>
+
+                            <div class="category-list">
+
+                                <p>
+                                    <i class="purple"></i>
+                                    <b>Электроника</b>
+                                    <span>35% (4 357 500 сум)</span>
+                                </p>
+
+                                <p>
+                                    <i class="green"></i>
+                                    <b>Продукты</b>
+                                    <span>28% (3 486 000 сум)</span>
+                                </p>
+
+                                <p>
+                                    <i class="orange"></i>
+                                    <b>Одежда</b>
+                                    <span>15% (1 868 000 сум)</span>
+                                </p>
+
+                                <p>
+                                    <i class="blue"></i>
+                                    <b>Дом и быт</b>
+                                    <span>12% (1 494 500 сум)</span>
+                                </p>
+
+                                <p>
+                                    <i class="pink"></i>
+                                    <b>Транспорт</b>
+                                    <span>10% (1 245 500 сум)</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TOP STORES -->
+
+                    <div class="chart-card stores">
+
+                        <h2>Топ магазинов</h2>
+
+                        <div class="store-row">
+                            <span>Techno Market</span>
+                            <div class="bar">
+                                <i style="width: 85%;"></i>
+                            </div>
+                            <b>5 249 000 сум</b>
+                            <small>42%</small>
+                        </div>
+
+                        <div class="store-row">
+                            <span>Корзинка</span>
+                            <div class="bar">
+                                <i style="width: 60%;"></i>
+                            </div>
+                            <b>2 356 800 сум</b>
+                            <small>19%</small>
+                        </div>
+
+                        <div class="store-row">
+                            <span>Makro</span>
+                            <div class="bar">
+                                <i style="width: 45%;"></i>
+                            </div>
+                            <b>1 643 500 сум</b>
+                            <small>13%</small>
+                        </div>
+
+                        <div class="store-row">
+                            <span>Stroy Center</span>
+                            <div class="bar">
+                                <i style="width: 38%;"></i>
+                            </div>
+                            <b>1 285 000 сум</b>
+                            <small>10%</small>
+                        </div>
+
+                        <div class="store-row">
+                            <span>Другие</span>
+                            <div class="bar">
+                                <i style="width: 50%;"></i>
+                            </div>
+                            <b>1 915 700 сум</b>
+                            <small>16%</small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- DAYS -->
+
+                    <div class="chart-card days">
+
+                        <h2>Средние траты по дням недели</h2>
+
+                        <div class="bars">
+
+                            <div><i style="height:45%;"></i><span>Пн</span></div>
+                            <div><i style="height:40%;"></i><span>Вт</span></div>
+                            <div><i style="height:55%;"></i><span>Ср</span></div>
+                            <div><i style="height:60%;"></i><span>Чт</span></div>
+                            <div><i style="height:90%;"></i><span>Пт</span></div>
+                            <div><i style="height:70%;"></i><span>Сб</span></div>
+                            <div><i style="height:50%;"></i><span>Вс</span></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT PANEL -->
+
+            <aside class="right-panel">
+
+
+                <!-- BUDGET -->
+
+                <div class="side-card">
+
+                    <div class="side-title">
+                        <h2>Бюджет</h2>
+                        <button>Изменить</button>
+                    </div>
+
+                    <span>Месячный бюджет</span>
+
+                    <strong class="budget">
+                        15 000 000 сум
+                    </strong>
+
+                    <div class="budget-bar">
+                        <i></i>
+                    </div>
+
+                    <div class="budget-info">
+
+                        <div>
+                            <span>Потрачено</span>
+                            <b>12 450 000 сум</b>
+                        </div>
+
+                        <div>
+                            <span>Осталось</span>
+                            <b>2 550 000 сум</b>
+                        </div>
+
+                    </div>
+
+                    <p class="budget-ok">
+                        ✓ &nbsp; Вы в рамках бюджета
+                    </p>
+
+                </div>
+
+
+                <!-- BIG PURCHASE -->
+
+                <div class="side-card">
+
+                    <h2>Самая крупная покупка</h2>
+
+                    <div class="big-purchase">
+
+                        <div class="purchase-img">
+                            💻
+                        </div>
+
+                        <div>
+                            <b>MacBook Air M2</b>
+                            <span>Techno Market</span>
+                            <small>25 июня, 15:42</small>
+                        </div>
+
+                        <strong>
+                            9 990 000 сум
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FREQUENCY -->
+
+                <div class="side-card frequency">
+
+                    <h2>Частота покупок</h2>
+
+                    <strong>
+                        4.1 раза <small>в неделю</small>
+                    </strong>
+
+                    <span class="up">
+                        ↑ 0.7
+                    </span>
+
+                    <p>
+                        по сравнению с прошлым месяцем
+                    </p>
+
+                    <div class="mini-chart">
+                        <i></i>
+                    </div>
+
+                </div>
+
+
+                <!-- TIPS -->
+
+                <div class="side-card tips">
+
+                    <h2>Советы</h2>
+
+                    <div class="tip-icon">
+                        💡
+                    </div>
+
+                    <p>
+                        Вы тратите больше всего
+                        по пятницам. Возможно,
+                        стоит планировать покупки
+                        на другие дни.
+                    </p>
+
+                    <a>Все советы →</a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+class="camera-modal"
+    id="cameraModal"
+>
+
+    <div class="camera-box">
+
+        <button
+            class="camera-close"
+            id="closeCamera"
+        >
+            ×
+        </button>
+
+        <h2>
+            Добавить чек
+        </h2>
+
+        <p>
+            Наведите камеру на QR-код чека
+        </p>
+
+        <div
+            id="reader"
+            style="width: 100%;"
+        ></div>
+
+        <div
+            id="ocrResult"
+            style="margin-top: 15px;"
+        ></div>
+
+        <p
+            class="camera-status"
+            id="cameraStatus"
+        >
+            Нажмите «Сканировать чек»
+        </p>
+
+        <button
+            class="frbutt"
+            type="button"
+            id="scanReceipt"
+        >
+            Сканировать чек
+        </button>
+
+        <button
+            class="camera-cancel"
+            id="cancelCamera"
+        >
+            Выйти
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+
+</body>
+</html>

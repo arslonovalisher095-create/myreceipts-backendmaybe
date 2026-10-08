@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Вход - MyReceipts</title>
+
+    <link
+        rel="icon"
+        href="Designer__3_-removebg-preview.png"
+        type="image/png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="login.css"
+    >
+
+    <!-- Google Identity Services -->
+    <script
+        src="https://accounts.google.com/gsi/client"
+        async
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     BACKGROUND
+========================================== -->
+
+<div class="background">
+
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+</div>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="login-header">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+
+            <img
+                src="mayas.png"
+                alt="MyReceipts"
+            >
+
+        </div>
+
+        <div class="brand-text">
+
+            <strong>
+                MyReceipts
+            </strong>
+
+            <span>
+                всегда под рукой
+            </span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ==========================================
+     MAIN
+========================================== -->
+
+<main class="login-page">
+
+
+    <!-- ======================================
+         LEFT
+    ======================================= -->
+
+    <section class="login-section">
+
+
+        <div class="login-card">
+
+
+            <div class="welcome-icon">
+
+                <img src="wgsd.png" alt="">
+
+            </div>
+
+
+            <h1>
+                Добро пожаловать
+            </h1>
+
+
+            <p class="subtitle">
+
+                Войдите в MyReceipts,
+                чтобы все ваши покупки
+                были в одном месте.
+
+            </p>
+
+
+            <!-- ==================================
+                 GOOGLE
+            =================================== -->
+
+            <div
+                id="g_id_onload"
+
+                data-client_id="386892579592-ud73gcc5qkeo5o05bftevlkbf2df4m20.apps.googleusercontent.com"
+
+                data-callback="handleGoogleLogin"
+
+                data-auto_prompt="false"
+            >
+            </div>
+
+
+            <div
+                class="g_id_signin"
+
+                data-type="standard"
+
+                data-size="large"
+
+                data-theme="outline"
+
+                data-text="signin_with"
+
+                data-shape="rectangular"
+
+                data-logo_alignment="left"
+
+                data-width="380"
+            >
+            </div>
+
+
+            <div class="or">
+
+                <span></span>
+
+                <p>
+                    безопасный вход
+                </p>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="security">
+
+                <span class="security-icon">
+                    
+                </span>
+
+                <div>
+
+                    <strong>
+                        Ваши данные защищены
+                    </strong>
+
+                    <p>
+                        Мы используем безопасную
+                        авторизацию Google.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p class="terms">
+
+                Продолжая, вы соглашаетесь
+                с условиями использования
+                MyReceipts.
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ======================================
+         RIGHT PREVIEW
+    ======================================= -->
+
+    <section class="preview-section">
+
+
+        <div class="preview-content">
+
+
+            <div class="preview-label">
+
+                <span class="dot"></span>
+
+                Ваша история покупок
+
+            </div>
+
+
+            <h2>
+
+                Все чеки.
+                <br>
+
+                <span>
+                    В одном месте.
+                </span>
+
+            </h2>
+
+
+            <p class="preview-description">
+
+                Сканируйте чеки, храните гарантии
+                и контролируйте расходы без
+                лишних бумажек.
+
+            </p>
+
+
+            <!-- ==================================
+                 MINI DASHBOARD
+            =================================== -->
+
+            <div class="mini-dashboard">
+
+
+                <div class="mini-top">
+
+                    <div>
+
+                        <span>
+                            Потрачено
+                        </span>
+
+                        <strong>
+                            12 450 000 сум
+                        </strong>
+
+                    </div>
+
+                    <div class="mini-percent">
+                        +12.4%
+                    </div>
+
+                </div>
+
+
+                <div class="mini-chart">
+
+                    <div class="chart-line line-one"></div>
+                    <div class="chart-line line-two"></div>
+
+                </div>
+
+
+                <div class="mini-receipts">
+
+
+                    <div class="mini-receipt">
+
+                        <div class="mini-receipt-icon">
+                            🧾
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Techno Market
+                            </strong>
+
+                            <span>
+                                Сегодня, 15:42
+                            </span>
+
+                        </div>
+
+                        <b>
+                            1 249 000
+                        </b>
+
+                    </div>
+
+
+                    <div class="mini-receipt">
+
+                        <div class="mini-receipt-icon">
+                            🛒
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Корзинка
+                            </strong>
+
+                            <span>
+                                Вчера, 18:20
+                            </span>
+
+                        </div>
+
+                        <b>
+                            356 800
+                        </b>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="features">
+
+
+                <div class="feature">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <p>
+                        Все чеки под рукой
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <p>
+                        Контроль гарантий
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <p>
+                        Аналитика расходов
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <span>
+        © 2026 MyReceipts
+    </span>
+
+    <span>
+        Ваши покупки. Всегда рядом.
+    </span>
+
+</footer>
+
+
+<!-- ==========================================
+     LOGIN JS
+========================================== -->
+
+<script src="login.js"></script>
+
+
+</body>
+
+</html>

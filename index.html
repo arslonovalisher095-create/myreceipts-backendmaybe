@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyReceipts - All your purchases in one place</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="icon"
+        href="Designer__3_-removebg-preview.png"
+        sizes="64x64"
+        type="image/png"
+    >
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <img src="mayas.png" alt="MyReceipts">
+            </div>
+
+            <div>
+                <h2>MyReceipts</h2>
+
+                <span data-i18n="tagline">
+                    всегда под рукой
+                </span>
+            </div>
+
+        </div>
+
+
+        <button
+            class="add-btn"
+            id="addReceiptBtn"
+            type="button"
+            data-i18n="addReceipt"
+        >
+            ＋ Добавить чек
+        </button>
+
+
+        <nav>
+
+            <a  
+                href="index.html"
+                class="active"
+                data-i18n="allReceipts"
+            >
+                ▣ Все чеки
+            </a>
+
+
+            <a
+                href="garant.html"
+                data-i18n="warranties"
+            >
+                ▣ Гарантии
+            </a>
+
+
+            <a
+                href="analytics.html"
+                data-i18n="analytics"
+            >
+                ▣ Аналитика
+            </a>
+
+
+            <a
+                href="shop.html"
+                data-i18n="stores"
+            >
+                ▣ Магазины
+            </a>
+
+
+            <a
+                href="Category.html"
+                data-i18n="categories"
+            >
+                ▣ Категории
+            </a>
+
+
+            <a
+                href="korzina.html"
+                data-i18n="trash"
+            >
+                ▣ Корзина
+            </a>
+
+        </nav>
+
+
+        <div class="promo">
+
+            <div class="promo-icon">
+                <img src="sdfdsfdsfadsfasdas.png" alt="">
+            </div>
+
+
+            <h3 data-i18n="moreThanReceipts">
+                Больше, чем просто чеки
+            </h3>
+
+
+            <p data-i18n="promoText">
+                Сохраняйте гарантии, отслеживайте траты
+                и получайте напоминания
+            </p>
+
+
+            <a
+                href="#"
+                data-i18n="learnMore"
+            >
+                Узнать больше →
+            </a>
+
+        </div>
+
+
+        <div class="bottom-nav">
+
+            <a
+                href="#"
+                data-i18n="settings"
+            >
+                Настройки
+            </a>
+
+
+            <a
+                href="#"
+                data-i18n="help"
+            >
+                Помощь
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main class="main">
+
+        <header>
+
+            <div class="search">
+
+                <img
+                    src="why.png"
+                    alt=""
+                >
+
+
+                <input
+                    id="searchInput"
+                    type="text"
+                    data-i18n-placeholder="searchPlaceholder"
+                    placeholder="Поиск по чекам, товарам, магазинам..."
+                >
+
+
+                <span>
+                    Ctrl / ⌘ + K
+                </span>
+
+            </div>
+
+
+            <!-- =====================================
+                 PROFILE
+            ====================================== -->
+
+            <div class="profile">
+
+                <div
+                    class="account"
+                    id="accountButton"
+                >
+
+                    <div
+                        class="avatar"
+                        id="userAvatar"
+                    >
+                        А
+                    </div>
+
+
+                    <div class="account-info">
+
+                        <b id="userName">
+                            Алишер
+                        </b>
+
+
+                        <span id="userEmail">
+                            Google аккаунт
+                        </span>
+
+                    </div>
+
+
+                    <span class="account-arrow">
+                        ˅
+                    </span>
+
+                </div>
+
+
+                <!-- =================================
+                     ACCOUNT MENU
+                ================================== -->
+
+                <div
+                    class="account-menu"
+                    id="accountMenu"
+                >
+
+                    <div class="account-menu-header">
+
+                        <div
+                            class="avatar account-menu-avatar"
+                            id="menuUserAvatar"
+                        >
+                            А
+                        </div>
+
+
+                        <div>
+
+                            <b id="menuUserName">
+                                Алишер
+                            </b>
+
+
+                            <span id="menuUserEmail">
+                                Google аккаунт
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="account-menu-divider"></div>
+
+
+                    <button
+                        class="account-menu-item"
+                        id="accountSettings"
+                        type="button"
+                    >
+
+                        <img
+                            src="gear-removebg-preview.png"
+                            alt=""
+                        >
+
+                        <span data-i18n="accountSettings">
+                            Настройки аккаунта
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="account-menu-item"
+                        id="accountProfile"
+                        type="button"
+                    >
+
+                        <img
+                            src="profile-removebg-preview.png"
+                            alt=""
+                        >
+
+                        <span data-i18n="profile">
+                            Профиль
+                        </span>
+
+                    </button>
+
+
+                    <div class="account-menu-divider"></div>
+
+
+                    <button
+                        class="account-menu-logout"
+                        id="logoutButton"
+                        type="button"
+                    >
+
+                        <img
+                            src="exit-removebg-preview.png"
+                            alt=""
+                        >
+
+                        <span data-i18n="logout">
+                            Выйти
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================================
+             CONTENT
+        ========================================== -->
+
+        <div class="content">
+
+            <section class="receipts">
+
+                <h1 data-i18n="myReceipts">
+                    Мои чеки
+                </h1>
+
+
+                <!-- FILTERS -->
+
+                <div class="filters">
+
+                    <button
+                        class="selected"
+                        type="button"
+                        data-filter="all"
+                        data-i18n="allReceipts"
+                    >
+                        Все чеки
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="thisMonth"
+                        data-i18n="thisMonth"
+                    >
+                        Этот месяц
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="lastMonth"
+                        data-i18n="lastMonth"
+                    >
+                        Прошлый месяц
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-filter="thisYear"
+                        data-i18n="thisYear"
+                    >
+                        Этот год
+                    </button>
+
+
+                    <button
+                        class="filter"
+                        type="button"
+                        data-i18n="filters"
+                    >
+                        ☷ Фильтры
+                    </button>
+
+                </div>
+
+
+                <!-- =================================
+                     STATS
+                ================================== -->
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <span data-i18n="totalReceipts">
+                            Всего чеков
+                        </span>
+
+
+                        <strong id="totalReceipts">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span data-i18n="spent">
+                            Потрачено
+                        </span>
+
+
+                        <strong id="totalSpent">
+                            0 сум
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span data-i18n="averageReceipt">
+                            Средний чек
+                        </span>
+
+
+                        <strong id="averageReceipt">
+                            0 сум
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <span data-i18n="activeWarranties">
+                            Гарантии активны
+                        </span>
+
+
+                        <strong id="activeWarranties">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <h3
+                    class="month"
+                    data-i18n="august2026"
+                >
+                    Октябрь 2026
+                </h3>
+
+
+                <!-- =================================
+                     RECEIPTS
+                ================================== -->
+
+                <div
+                    class="receipt-list"
+                    id="receiptList"
+                >
+                </div>
+
+
+                <button
+                    class="more"
+                    type="button"
+                    data-i18n="showMore"
+                >
+                    Показать ещё ↓
+                </button>
+
+            </section>
+
+
+            <!-- =====================================
+                 RECEIPT SIDE PANEL
+            ====================================== -->
+
+            <aside
+                class="receipt-side-panel"
+                id="receiptSidePanel"
+            >
+
+                <button
+                    class="panel-close"
+                    id="closeReceiptPanel"
+                    type="button"
+                    aria-label="Закрыть"
+                >
+                    ×
+                </button>
+
+
+                <div class="panel-store">
+
+                    <div class="panel-store-icon">
+                        🧾
+                    </div>
+
+
+                    <div>
+
+                        <h2 id="panelStoreName">
+                            Магазин
+                        </h2>
+
+
+                        <span id="panelDate">
+                            Сегодня, 15:42
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel-total">
+
+                    <span data-i18n="total">
+                        Итого
+                    </span>
+
+
+                    <strong id="panelTotal">
+                        0 сум
+                    </strong>
+
+                </div>
+
+
+                <div class="panel-divider"></div>
+
+
+                <h3 data-i18n="purchased">
+                    Что куплено
+                </h3>
+
+
+                <div
+                    class="panel-products"
+                    id="panelProducts"
+                >
+                </div>
+
+
+                <div class="panel-divider"></div>
+
+
+                <div class="panel-info-row">
+
+                    <span data-i18n="itemCount">
+                        Количество товаров
+                    </span>
+
+
+                    <b id="panelItems">
+                        0
+                    </b>
+
+                </div>
+
+
+                <div class="panel-info-row">
+
+                    <span data-i18n="category">
+                        Категория
+                    </span>
+
+
+                    <b id="panelCategory">
+                        —
+                    </b>
+
+                </div>
+
+
+                <div class="panel-info-row">
+
+                    <span data-i18n="warranty">
+                        Гарантия
+                    </span>
+
+
+                    <b id="panelWarranty">
+                        —
+                    </b>
+
+                </div>
+
+
+                <div class="panel-info-row">
+
+                    <span data-i18n="store">
+                        Магазин
+                    </span>
+
+
+                    <b id="panelShop">
+                        —
+                    </b>
+
+                </div>
+
+
+                <!-- DELETE -->
+                <button
+                    class="panel-delete"
+                    id="deleteReceipt"
+                    type="button"
+                    data-i18n="deleteReceipt"
+                >
+                    🗑 Удалить чек
+                </button>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================
+     CAMERA MODAL
+========================================== -->
+
+<div
+    class="camera-modal"
+    id="cameraModal"
+>
+
+    <div class="camera-box">
+
+        <button
+            class="camera-close"
+            id="closeCamera"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <h2 data-i18n="addReceiptTitle">
+            Добавить чек
+        </h2>
+
+
+        <p data-i18n="scanDescription">
+            Наведите камеру на QR-код чека
+        </p>
+
+
+        <div
+            id="reader"
+            style="width: 100%;"
+        >
+        </div>
+
+
+        <div
+            id="ocrResult"
+            style="margin-top: 15px;"
+        >
+        </div>
+
+
+        <p
+            class="camera-status"
+            id="cameraStatus"
+        >
+            Нажмите «Сканировать чек»
+        </p>
+
+
+        <button
+            class="frbutt"
+            type="button"
+            id="scanReceipt"
+            data-i18n="scanReceipt"
+        >
+            Сканировать чек
+        </button>
+
+
+        <button
+            class="camera-cancel"
+            id="cancelCamera"
+            type="button"
+            data-i18n="exit"
+        >
+            Выйти
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     ACCOUNT SETTINGS
+========================================== -->
+
+<div
+    class="account-settings-overlay"
+    id="accountSettingsOverlay"
+>
+
+    <div class="account-settings">
+
+        <button
+            class="account-settings-close"
+            id="closeAccountSettings"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <div class="account-settings-title">
+
+            <div class="settings-big-icon">
+                ⚙️
+            </div>
+
+
+            <div>
+
+                <h2 data-i18n="accountSettings">
+                    Настройки аккаунта
+                </h2>
+
+
+                <p data-i18n="accountSettingsDescription">
+                    Управление вашим аккаунтом MyReceipts
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- GOOGLE -->
+
+        <div class="settings-card">
+
+            <div class="settings-card-left">
+
+                <div class="settings-icon">
+                    👤
+                </div>
+
+
+                <div>
+
+                    <h3 data-i18n="googleAccount">
+                        Аккаунт Google
+                    </h3>
+
+
+                    <p data-i18n="googleDescription">
+                        Аккаунт используется для входа в MyReceipts
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <span
+                class="settings-status"
+                data-i18n="connected"
+            >
+                ● Подключён
+            </span>
+
+        </div>
+
+
+        <!-- RECEIPTS -->
+
+        <div class="settings-card">
+
+            <div class="settings-card-left">
+
+                <div class="settings-icon">
+                    🧾
+                </div>
+
+
+                <div>
+
+                    <h3 data-i18n="yourReceipts">
+                        Ваши чеки
+                    </h3>
+
+
+                    <p data-i18n="receiptsDescription">
+                        Все ваши чеки сохраняются в аккаунте
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LANGUAGE -->
+
+        <div class="settings-card language-card">
+
+            <div class="settings-card-left">
+
+                <div class="settings-icon">
+                    🌐
+                </div>
+
+
+                <div>
+
+                    <h3 data-i18n="language">
+                        Язык
+                    </h3>
+
+
+                    <p data-i18n="languageDescription">
+                        Выберите язык интерфейса MyReceipts
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="language-dropdown"
+                id="languageDropdown"
+            >
+
+                <button
+                    class="language-selected"
+                    id="languageSelected"
+                    type="button"
+                >
+
+                    <span
+                        class="language-flag"
+                        id="selectedFlag"
+                    >
+                        🇷🇺
+                    </span>
+
+
+                    <span
+                        class="language-name"
+                        id="selectedLanguage"
+                    >
+                        Русский
+                    </span>
+
+
+                    <span class="language-arrow">
+                        ⌄
+                    </span>
+
+                </button>
+
+
+                <div
+                    class="language-options"
+                    id="languageOptions"
+                >
+
+                    <button
+                        class="language-option selected"
+                        type="button"
+                        data-language="ru"
+                        data-flag="🇷🇺"
+                        data-name="Русский"
+                    >
+                        <span>🇷🇺</span>
+                        <span>Русский</span>
+                    </button>
+
+
+                    <button
+                        class="language-option"
+                        type="button"
+                        data-language="uz"
+                        data-flag="🇺🇿"
+                        data-name="O‘zbekcha"
+                    >
+                        <span>🇺🇿</span>
+                        <span>O‘zbekcha</span>
+                    </button>
+
+
+                    <button
+                        class="language-option"
+                        type="button"
+                        data-language="en"
+                        data-flag="🇬🇧"
+                        data-name="English"
+                    >
+                        <span>🇬🇧</span>
+                        <span>English</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <select
+                id="languageSelect"
+                style="display: none;"
+            >
+
+                <option value="ru">Русский</option>
+                <option value="uz">O‘zbekcha</option>
+                <option value="en">English</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- LOGOUT -->
+
+        <br>
+
+        <button
+            class="settings-logout"
+            id="settingsLogoutButton"
+            type="button"
+            data-i18n="logout"
+        >
+             Выйти из аккаунта
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     ACCOUNT PROFILE
+========================================== -->
+
+<div
+    class="account-profile-overlay"
+    id="accountProfileOverlay"
+>
+
+    <div class="account-profile-window">
+
+        <button
+            class="account-profile-close"
+            id="closeAccountProfile"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <div class="account-profile-title">
+
+            <div class="profile-big-icon">
+                👤
+            </div>
+
+            <div>
+
+                <h2 data-i18n="profile">
+                    Профиль
+                </h2>
+
+                <p data-i18n="profileDescription">
+                    Информация о вашем аккаунте MyReceipts
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- USER -->
+
+        <div class="profile-user-card">
+
+            <div
+                class="profile-user-avatar"
+                id="profileUserAvatar"
+            >
+                А
+            </div>
+
+
+            <div class="profile-user-data">
+
+                <h2 id="profileUserName">
+                    Алишер
+                </h2>
+
+                <p id="profileUserEmail">
+                    Google аккаунт
+                </p>
+
+                <span
+                    class="profile-active"
+                    data-i18n="accountActive"
+                >
+                    ● Аккаунт активен
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- INFORMATION -->
+
+        <div class="profile-info-card">
+
+            <h3 data-i18n="accountInformation">
+                Информация аккаунта
+            </h3>
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span data-i18n="username">
+                        Имя пользователя
+                    </span>
+
+                    <strong id="profileName">
+                        Алишер
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span data-i18n="email">
+                        Электронная почта
+                    </span>
+
+                    <strong id="profileEmail">
+                        Google аккаунт
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span data-i18n="accountType">
+                        Тип аккаунта
+                    </span>
+
+                    <strong data-i18n="google">
+                        Google
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     DELETE CONFIRMATION
+========================================== -->
+
+<div
+    class="delete-confirm-overlay"
+    id="deleteConfirmOverlay"
+>
+
+    <div class="delete-confirm-box">
+
+        <div class="delete-confirm-icon">
+            🗑️
+        </div>
+
+
+        <h2 data-i18n="deleteConfirmTitle">
+            Удалить чек?
+        </h2>
+
+
+        <p data-i18n="deleteConfirmText">
+            Вы действительно хотите удалить этот чек?
+        </p>
+
+
+        <div class="delete-confirm-buttons">
+
+            <button
+                class="delete-cancel-btn"
+                id="deleteCancelBtn"
+                type="button"
+                data-i18n="cancel"
+            >
+                Отмена
+            </button>
+
+
+            <button
+                class="delete-confirm-btn"
+                id="deleteConfirmBtn"
+                type="button"
+                data-i18n="confirmDelete"
+            >
+                Удалить
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     QR LIBRARY
+========================================== -->
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+
+<!-- =========================================
+     MAIN JAVASCRIPT
+========================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
